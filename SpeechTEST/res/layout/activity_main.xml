@@ -1,0 +1,55 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity" >
+
+    <TextView
+        android:id="@+id/text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/toggleButton1"
+        android:text="@string/app_name" />
+
+<TextView
+    android:id="@+id/textView1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignBaseline="@+id/toggleButton1"
+    android:layout_alignBottom="@+id/toggleButton1"
+    android:layout_alignParentLeft="true"
+    android:text="言語モード："
+    android:textAppearance="?android:attr/textAppearanceLarge" />
+
+<ToggleButton
+    android:id="@+id/toggleButton1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentTop="true"
+    android:layout_marginTop="29dp"
+    android:layout_toRightOf="@+id/textView1"
+    android:textOff="日本語"
+    android:textOn="英語" />
+
+<TextView
+    android:id="@+id/textView2"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignBaseline="@+id/toggleButton1"
+    android:layout_alignBottom="@+id/toggleButton1"
+    android:layout_toRightOf="@+id/toggleButton1"
+    android:text="で認識します。"
+    android:textAppearance="?android:attr/textAppearanceLarge" />
+
+<Button
+    android:id="@+id/buttonA"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignBaseline="@+id/textView2"
+    android:layout_alignBottom="@+id/textView2"
+    android:layout_alignParentRight="true"
+    android:layout_marginRight="18dp"
+    android:text="音声入力・開始！" />
+    
+</RelativeLayout>
