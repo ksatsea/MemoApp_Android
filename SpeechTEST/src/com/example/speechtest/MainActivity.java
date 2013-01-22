@@ -34,7 +34,6 @@ public class MainActivity extends Activity {
             ToggleButton tgb_jpen = (ToggleButton)findViewById(R.id.toggleButton1);
 			@Override
 			public void onClick(View v) {
-				// TODO Auto-generated method stub
 				try {
 					Intent intent = new Intent(RecognizerIntent.ACTION_RECOGNIZE_SPEECH);
 					intent.putExtra(RecognizerIntent.EXTRA_LANGUAGE_MODEL,
